@@ -21,5 +21,11 @@ public class Main {
         System.out.print("How many slices per pizza? ");
         int slices = input.nextInt();
 
+        int totalSlice = pizza * slices;
+        int peopleSlice = totalSlice / people;
+        int leftover = totalSlice % people;
+
+        System.out.printf("Each person gets %d slices of pizza, with %d left over.", peopleSlice, leftover);
+
     }
 }
